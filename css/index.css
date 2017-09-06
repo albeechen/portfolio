@@ -1,5 +1,6 @@
 /********home abstract div***************/
-#container{
+
+#container {
     height: 660px;
     padding: 0px;
     margin: 0px;
@@ -12,8 +13,10 @@
     position: absolute;
 }
 
+
 /********home div***************/
-.home-element{
+
+.home-element {
     height: 100%;
     float: left;
     text-align: center;
@@ -21,7 +24,7 @@
 }
 
 #home-photo {
-   z-index: -1;
+    z-index: -1;
 }
 
 #photo {
@@ -43,10 +46,10 @@
     padding-top: 450px;
 }
 
-/*********RWD*********/
-@media (min-width: 1200px) and (max-width: 1600px) {
 
-}
+/*********RWD*********/
+
+@media (min-width: 1200px) and (max-width: 1600px) {}
 
 @media (min-width: 992px) and (max-width: 1199px) {
     #home-slogan {
@@ -57,7 +60,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-    .home-element{
+    .home-element {
         height: auto;
         width: 100%;
         float: none;
@@ -77,7 +80,7 @@
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-    .home-element{
+    .home-element {
         height: auto;
         width: 100%;
         float: none;
@@ -98,7 +101,7 @@
 }
 
 @media (max-width: 479px) {
-    .home-element{
+    .home-element {
         height: auto;
         width: 100%;
         float: none;
@@ -115,6 +118,6 @@
     }
 
     #home-slogan {
-        padding-top: 10px;    
+        padding-top: 10px;
     }
 }
