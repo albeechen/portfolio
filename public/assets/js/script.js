@@ -1,10 +1,10 @@
 $(document).ready(function() {
-   $("#hamburger").click(function() {
-       	let menu = document.getElementById('menu');
+    $("#hamburger").click(function() {
+        let menu = document.getElementById('menu');
         let sites = document.getElementById('link_sites');
         if (menu.style.display === 'none') {
             menu.style.display = 'block';
-        }else{
+        } else {
             menu.style.display = 'none';
             sites.style.display = 'none';
         }
@@ -15,7 +15,7 @@ $(document).ready(function() {
         if (sites.style.display === 'none') {
             sites.style.display = 'block';
         } else {
-        	sites.style.display = 'none';
+            sites.style.display = 'none';
         }
-    });   
+    });
 });
