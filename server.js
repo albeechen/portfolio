@@ -2,19 +2,19 @@ const express = require('express');
 const server = express();
 const server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 const server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
-/*const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 const nodemailer  = require('nodemailer');
 
-*/
 
-//server.use(bodyParser.urlencoded({extended: false }));
+
+server.use(bodyParser.urlencoded({extended: false }));
 server.use(express.static(__dirname + '/public/'));
 server.get('/', (req, res) => {
 	console.log("ENTER GET");
 	res.status = 200;
 	res.send({message: 'test'});
 });
-/*
+
 server.post('/sent', (req, res) => {
 	console.log("name= " + req.body.name);
 	console.log("mail= " + req.body.mail);
@@ -46,7 +46,7 @@ server.post('/sent', (req, res) => {
 	    transporter.close();
 	 });
 	return res.redirect("contact.html");
-});*/
+});
 
 server.listen(server_port, server_ip_address, function () {
   	console.log( "Listening on " + server_ip_address + ", port " + server_port )
