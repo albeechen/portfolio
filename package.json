@@ -1,9 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "portfolio",
+  "description": "myPortfolio",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.14.1",
     "nodemailer": "^4.1.0"
   },
@@ -16,7 +17,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/albeechen/portfolio.git"
   },
-  "author": "albeechen",
+  "author": "albee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/albeechen/portfolio/issues"
