@@ -1,12 +1,9 @@
 const express = require('express');
 const server = express();
-const server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
-const server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 const bodyParser = require('body-parser');
 const nodemailer  = require('nodemailer');
 
-
-
+server.set('port', (process.env.PORT || 5000));
 server.use(bodyParser.urlencoded({extended: false }));
 server.use(express.static(__dirname + '/public/'));
 server.get('/', (req, res) => {
@@ -48,6 +45,6 @@ server.post('/sent', (req, res) => {
 	return res.redirect("contact.html");
 });
 
-server.listen(server_port, server_ip_address, function () {
-  	console.log( "Listening on " + server_ip_address + ", port " + server_port )
+server.listen(server.get('port'),  function () {
+  	console.log('Node app is running on port', server.get('port'));
 });
