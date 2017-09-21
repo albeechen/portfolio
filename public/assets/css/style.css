@@ -564,6 +564,11 @@ footer{
 		height: 80%;
 	}
 
+	#emailMe:hover{
+		margin: 0;
+		height: 80%;
+	}
+
 	#map{
 		margin-top: 50px;
 	}
