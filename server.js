@@ -11,3 +11,7 @@ server.get('/', (req, res) => {
 	res.status = 200;
 	res.send({message: 'test'});
 });
+
+server.listen(server.get('port'),  function () {
+  	console.log('Node app is running on port', server.get('port'));
+});
