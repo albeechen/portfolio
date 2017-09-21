@@ -242,10 +242,13 @@ footer{
 }
 
 #emailMe:hover{
+	margin: 20px auto;
 	background: url("../img/sentEmail.png") no-repeat;
 	width: 35%;
-	height: 30%;
+	height:  55%;
 	background-size: 90%;
+	max-height: 100%;
+	display: inline-block;
 }
 
 #map{
