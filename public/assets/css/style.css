@@ -1,110 +1,575 @@
-body {
-    box-sizing: border-box;
+.body, .html{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+
 }
 
-
-
-/********menu div***************/
-
-ul {
-    list-style-type: none;
+.page{
+	width: 100%;
+	height: 660px;
+	color: white;
 }
 
-.main-content {
-    width: 100%;
-    height: 1000px;
-    text-align: center;
+.left{
+	width: 40%;
+	height: 100%;
+	float: left;
 }
 
-.menu-group {
-    width: 15%;
-    height: 100%;
-    z-index: 1;
-    float: right;
-    top: 0px;
-    right: 0px;
+.right{
+	width: 60%;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+
+.title{
+	font-family: "Sans-serif", Verdana, Times;
+	font-size: 90px;
+	padding-left: 120px;
+}
+
+h1, h3{
+	margin: 0;
+}
+
+.title1{
+	color: white;
+	padding-top: 50px;
+}
+
+.title2{
+	color: orange;
+	padding-top: 10px;
+}
+
+/***burger*****/
+#burger.glyphicon{
+	font-size: 28px;
+	color: white;
+}
+
+#navbarToggle{
+	top: 10px;
+	right: 10px;
+	position: fixed;
+	display: none;
+	z-index: 1;
+}
+
+/***menu*****/
+#header-nav{
+	width: 100%;
+	height: 60px;
+	bottom: 30px;
+	position: fixed;
+	background-color: white;
+	margin-bottom: 0;
+	border-radius: 0;
+	font-size: 24px;
+	text-align: center;
+	z-index: 2;
+}
+
+#header-collapse{
+	display: inline-block;
+	margin: 0;
     position: relative;
+    top: 20%;
+    z-index: 1;
 }
 
-.menu-item {
-    padding: 10px 0;
-    text-align: center;
+.navMenu{
+	float: left;
+	margin: 7px 30px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
-#link-sites {
-    padding-top: 20px;
-    font-size: 24px;
+/***footer*****/
+footer{
+	width: 100%;
+	height: 30px;
+	bottom: 0px;
+	position: fixed;
+	background-color: #ffc266;
+	text-align: center;
 }
 
-#hamburger {
-    margin: 10px;
+#footerName{
+	margin: 5px auto;
+	display: inline-block;
 }
 
-.burger-btn {
-    width: 100%;
-    float: right;
-    text-align: right;
+
+/***home page***/
+#home{
+	height: 710px;
+	background-image: url("../img/desk.jpg");
+ 	background-size: 100% 100%;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	opacity: 0.8;
 }
 
-.glyphicon {
-    font-size: 36px;
-    color: lightgray;
+#goDown{
+	background: url("../img/arrow.png") no-repeat;
+	width: 15%;
+	height: 15%;
+ 	background-size: contain;
+ 	margin: 0;
+ 	position: relative;
+ 	left: 45%;
+ 	top: 30%;
 }
 
-#menu {
-    height: 100%;
-    width: 100%;
-    padding-top: 130px;
-    background-color: rgba(0, 0, 0, 0.5);
+#quote{
+	background: url("../img/cloud_name.png") no-repeat;
+	width: 40%;
+	height: 55%;
+ 	background-size: 100% 100%;
+ 	margin: 0;
+ 	position: relative;
+ 	left: 35%;
+ 	top: 10%;
 }
+
+/***about page***/
+#about{
+	background-image: url("../img/blueBackGrd.jpg");
+}
+
+.context{
+	font-size: 32px;
+	position: absolute;
+	margin: 20% 10%;
+  	width: 80%;
+    color: white;
+}
+
+
+/***skill page***/
+#skill{
+	background-image: url("../img/subtle-mosaic-white.png");
+	height: 700px;
+}
+
+#skill .left{
+	width: 100%;
+	height: 30%;
+	float: none;
+	padding-top: 50px;
+	color: #00bfff;
+}
+
+#skill .right{
+	width: 100%;
+	height: 70%;
+	float: none;
+	margin: 10px auto;
+}
+
+#skillContain{
+	width: 100%;
+	height: 95%;
+	margin: 0px auto;
+}
+
+.left_box, .right_box{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.skillList{
+	width: 635px;
+	height: 100%;
+	max-width: 100%;
+}
+
+#skillList1{
+	background: url("../img/skillList1.png") no-repeat;
+	background-size: contain;
+	float: right;
+}
+
+#skillList2{
+	background: url("../img/skillList2.png") no-repeat;
+	background-size: contain;
+	float: left;
+}
+
+
+/***contact page***/
+#contact{
+	background-image: url("../img/yellow-polka-dot-pattern-1795.png");
+ 	background-attachment: fixed;
+}
+
+#contact .left, #contact .right{
+	width: 50%;
+	position: relative;
+}
+
+#contact .title{
+	color: orange;
+}
+
+#contact h3{
+	font-size: 48px;
+	color: gray;
+}
+
+#mail_box{
+	height: 70%;
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#emailMe{
+	margin: 20px auto;
+	background: url("../img/email.png") no-repeat;
+	width: 35%;
+	height: 55%;
+	background-size: 90%;
+	max-height: 100%;
+	display: inline-block;
+}
+
+#emailMe:hover{
+	background: url("../img/sentEmail.png") no-repeat;
+	width: 35%;
+	height: 30%;
+	background-size: 90%;
+}
+
+#map{
+	margin-top: 160px;
+	width: 100%;
+	height: 70%;
+	border: 1px red solid;
+}
+
+/***contact page***/
+#photo{
+	background-color: #d1b3ff;
+}
+/*debug*/
+#home{
+	background-color: black;
+}
+
+#about{
+	background-color: yellow;
+}
+
+#skills{
+	background-color: blue;
+}
+
+#contact{
+	background-color: green;
+}
+
+
 
 
 
 
 /*********RWD*********/
 
-@media (min-width: 1200px) and (max-width: 1600px) {}
+@media (min-width: 1200px) and (max-width: 1600px) {
+	
+}
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.title{
+		padding-left: 100px;
+	}
 
-@media (min-width: 769px) and (max-width: 991px) {}
+	.title{
+		font-size: 70px;
+	}
+
+	/***home page***/
+	#home {
+		background-size: 100%;
+	}
+
+	#quote{
+		top: 20%;
+	}
+
+	/***about page***/
+	.context{
+		font-size: 26px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+	.title{
+		padding-left: 60px;
+	}
+
+	.title{
+		font-size: 66px;
+	}
+
+	/***home page***/
+	#home {
+		background-size: 100%;
+	}
+
+	/***about page***/
+	.context{
+		font-size: 28px;
+	}
+}
 
 @media (min-width: 480px) and (max-width: 768px) {
-    .menu-group {
-        width: 100%;
-        height: 350px;
-    }
+	.left, .right{
+		width: 100%;
+		height: auto;
+		float: none;
+	}
 
-    #menu {
-        padding-top: 80px;
-    }
+	.title{
+		padding-left: 80px;
+		font-size: 60px;
+	}
 
-    #link-sites {
-        padding-left: 20px;
-        font-size: 24px;
-        float: right;
-        padding-top: 0;
-    }
+	#about .left, #skill .left{
+		height: 35%;
+	}
+
+	#about .right, #skill .right{
+		height: 65%;
+	}
+
+	/***home page***/
+	#home {
+		background-size: cover;
+	}
+
+	/***menu page***/
+   	#navbarToggle{
+		display: block;
+	}
+
+	div a {
+		color: white;
+	}
+
+	div a:hover{
+		color: #8ab8e0;
+	}
+
+	#header-nav{
+		display: none;
+		height: 100%;
+		width: 30%;
+		background-color: #ccddff;/*#004080;*/
+		bottom: 0;
+	}
+
+	.navMenu{
+		float: none;
+		color: white;
+	}
+
+	/***about page***/
+	.context{
+		font-size: 26px;
+	}
+
+	/***skill page***/
+	#skillContain{
+		width: 90%;
+	}
+
+	#skill .left{
+		text-align: left;	
+	}
+
+	#skillList1, #skillList2{
+		width: 100%;
+		height: 80%;
+		float: none;
+		background-size: 100% 100%;
+	}
+
+	#contact .left, #contact .right{
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+
+	#contact h3{
+		margin-top: 100px;
+		font-size: 36px;
+		height: 20%;
+	}
+
+	/***footer page***/
+	footer{
+		position: relative;
+		margin: 0;
+	}
 }
 
 @media (max-width: 479px) {
-    .menu-group {
-        width: 100%;
-        height: 280px;
-    }
+	.left, .right{
+		height: auto;
+		width: 100%;
+		float: none;
+	}
 
-    .glyphicon {
-        font-size: 24px;
-    }
+	.title{
+		padding-left: 45px;
+		font-size: 50px;
+		display: inline-block;
+	}
 
-    #menu {
-        padding-top: 60px;
-    }
+	#about .left, #skill .left{
+		height: 30%;	
+	}
 
-    #link-sites {
-        padding-left: 20px;
-        font-size: 24px;
-        float: right;
-        padding-top: 0;
-    }
+	#about .right, #skill .right{
+		height: 70%;
+	}
+
+	/***menu***/
+    #navbarToggle{
+		display: block;
+	}
+
+	.navMenu{
+		float: none;
+		margin: 10px auto;
+		font-size: 12px;
+		color: white;
+	}
+
+	div a {
+		color: white;
+	}
+
+	div a:hover{
+		color: #8ab8e0;
+	}
+
+	#header-nav{
+		display: none;
+		height: 100%;
+		width: 30%;
+		background-color: #ccddff;/*#004080;*/
+		bottom: 0;
+	}
+
+	.navMenu{
+		text-align: center;
+		float: none;
+		font-size: 12px;
+	}
+
+	/***home page***/
+	#quote{
+		width: 40%;
+		height: 20%;
+	 	background-size: 100% 100%;
+	 	margin: 0;
+	 	left: 35%;
+	 	top: 55%;
+	}
+
+	#goDown{
+		width: 15%;
+		height: 15%;
+	 	background-size: contain;
+	 	margin: 0;
+	 	position: relative;
+	 	left: 45%;
+	 	top: 70%;
+	}
+
+	/***about page***/
+	.context{
+		font-size: 20px;
+	}
+
+	/***skill page***/
+	#skillContain{
+		width: 90%;
+	}
+
+	#skill .title{
+		text-align: left;
+		padding-left: 0;
+	}
+
+	.left_box, .right_box{
+		width: 100%;
+		height: 50%;
+		float: none;
+		position: relative;
+	}
+
+	#skill .left{
+		text-align: left;	
+		padding-left: 45px;
+	}
+
+	#skillList1, #skillList2
+	{
+		width: 100%;
+		height: 80%;
+		background-size: 100%;
+		float: none;
+		position: absolute;
+	}
+
+	#skillList1{
+		bottom: 0;
+	}
+
+	#skillList2{
+		top: 0;
+	}
+
+	/***contact page***/
+	#contact .left, #contact .right{
+		width: 100%;
+		height: 50%;
+	}
+
+	#contact .titlel{
+		text-align: none;
+	}
+
+	#contact h3{
+		font-size: 24px;
+		height: 20%;
+	}
+
+	#emailMe{
+		margin: 0;
+		height: 80%;
+	}
+
+	#map{
+		margin-top: 50px;
+	}
+
+	/*foot page*/
+	footer{
+		position: relative;
+	}
+}
+
+@media (orientation:landscape) {
 }

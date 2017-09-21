@@ -1,21 +1,20 @@
 $(document).ready(function() {
-    $("#hamburger").click(function() {
-        let menu = document.getElementById('menu');
-        let sites = document.getElementById('link_sites');
-        if (menu.style.display === 'none') {
-            menu.style.display = 'block';
+    let menu = document.getElementById('header-nav');
+    $("#navbarToggle").click(function() {
+       if (menu.style.display === 'none') {
+           menu.style.display = 'block';
+            $('#burger').removeClass('glyphicon glyphicon-menu-hamburger').addClass('glyphicon glyphicon-remove');
         } else {
             menu.style.display = 'none';
-            sites.style.display = 'none';
+            $('#burger').removeClass('glyphicon glyphicon-remove').addClass('glyphicon glyphicon-menu-hamburger');
         }
     });
-
-    $("#link-btn").click(function() {
-        let sites = document.getElementById('link-sites');
-        if (sites.style.display === 'none') {
-            sites.style.display = 'block';
-        } else {
-            sites.style.display = 'none';
+    
+    $(window).resize(function(){
+        let w = $(window).width();
+        if((w > 768) && (menu.style.display === 'none')){
+            menu.style.display = 'block';
         }
-    });
+    })
 });
+
