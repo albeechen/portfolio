@@ -668,7 +668,7 @@ footer {
 @supports (overflow:-webkit-marquee) and (justify-content:inherit) {
      #home {
         background-color: pink;
-        background-image: url("../img/desk2.jpg");
+        background-image: url("../img/desk3.jpg");
         background-size: auto;
         background-repeat: no-repeat;
         background-attachment: scroll;
