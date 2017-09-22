@@ -49,6 +49,7 @@ h3 {
 
 
 
+
 /***burger*****/
 
 #burger.glyphicon {
@@ -63,6 +64,7 @@ h3 {
     display: none;
     z-index: 1;
 }
+
 
 
 
@@ -98,6 +100,7 @@ h3 {
 
 
 
+
 /***footer*****/
 
 footer {
@@ -113,6 +116,7 @@ footer {
     margin: 5px auto;
     display: inline-block;
 }
+
 
 
 
@@ -153,6 +157,7 @@ footer {
 
 
 
+
 /***about page***/
 
 #about {
@@ -166,6 +171,7 @@ footer {
     width: 80%;
     color: white;
 }
+
 
 
 
@@ -222,6 +228,7 @@ footer {
     background-size: contain;
     float: left;
 }
+
 
 
 
@@ -284,11 +291,13 @@ footer {
 
 
 
+
 /***contact page***/
 
 #photo {
     background-color: #d1b3ff;
 }
+
 
 
 
@@ -309,6 +318,7 @@ footer {
 #contact {
     background-color: green;
 }
+
 
 
 
@@ -458,6 +468,15 @@ footer {
 }
 
 @media (max-width: 479px) {
+    .safari_only {
+        #home {
+            background-color: pink;
+            /*url("../img/desk2.jpg");
+	    	height: 560PX;
+	    	background: auto;*/
+        }
+    }
+
     .left,
     .right {
         height: auto;
@@ -614,17 +633,6 @@ footer {
     /*foot page*/
     footer {
         position: relative;
-    }
-}
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px){
-    #home {
-        background-image: none;/*url("../img/desk2.jpg");
-    	height: 560PX;
-    	background: auto;*/
-    	color: pink;
     }
 }
 
