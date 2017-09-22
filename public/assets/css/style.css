@@ -653,7 +653,7 @@ footer {
     }
 }
 
-@media not all and (min-resolution:.001dpcm) {
+@media not all, (min-resolution:.001dpcm) and (max-width: 479px){
     @media {
         #home {
             background-color: pink;
@@ -665,7 +665,7 @@ footer {
     }
 }
 
-@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+@supports (overflow:-webkit-marquee), (justify-content:inherit) and (max-width: 768px){
      #home {
         background-color: pink;
         background-image: url("../img/desk3.jpg");
