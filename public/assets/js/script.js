@@ -1,6 +1,6 @@
 $(document).ready(function() {
     let menu = document.getElementById('header-nav');
-    $("#navbarToggle").click(function() {
+    $("#navbarToggle").on('click touchstart', function() {
        if (menu.style.display === 'none') {
            menu.style.display = 'block';
             $('#burger').removeClass('glyphicon glyphicon-menu-hamburger').addClass('glyphicon glyphicon-remove');
