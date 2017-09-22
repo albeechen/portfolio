@@ -481,7 +481,8 @@ footer{
 
 	/***home page***/
 	#home{
-		max-width: 100%;
+		background-image: url("../img/desk2.jpg");
+		background-size: cover;
 	}
 
 	#quote{
@@ -490,7 +491,7 @@ footer{
 	 	background-size: 100% 100%;
 	 	margin: 0;
 	 	left: 35%;
-	 	top: 70%;
+	 	top: 50%;
 	}
 
 	#goDown{
