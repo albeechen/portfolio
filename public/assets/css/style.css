@@ -621,9 +621,10 @@ footer {
 and (min-device-width : 320px) 
 and (max-device-width : 568px){
     #home {
-        background-image: url("../img/desk2.jpg");
+        background-image: none;/*url("../img/desk2.jpg");
     	height: 560PX;
-    	background: auto;
+    	background: auto;*/
+    	color: pink;
     }
 }
 
