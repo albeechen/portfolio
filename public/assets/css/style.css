@@ -49,7 +49,7 @@ h1, h3{
 /***burger*****/
 #burger.glyphicon{
 	font-size: 28px;
-	color: white;
+	color: gray;
 }
 
 #navbarToggle{
@@ -376,7 +376,7 @@ footer{
 		display: none;
 		height: 100%;
 		width: 30%;
-		background-color: #ccddff;/*#004080;*/
+		background-color: #2d2d86;/*#004080;*/
 		bottom: 0;
 	}
 
@@ -470,7 +470,7 @@ footer{
 		display: none;
 		height: 100%;
 		width: 30%;
-		background-color: #ccddff;/*#004080;*/
+		background-color: #2d2d86;/*#004080;*/
 		bottom: 0;
 	}
 
