@@ -654,9 +654,10 @@ footer {
         #home {
             background-color: pink;
             background-image: url("../img/desk2.jpg");
-            background-size: none;
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
         }
-    }
 }
 
 @media (orientation:landscape) {}
