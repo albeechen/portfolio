@@ -653,25 +653,19 @@ footer {
     }
 }
 
-@media not all, (min-resolution:.001dpcm) and (max-width: 479px){
+@media not all and (min-resolution:.001dpcm)  {
     @media {
         #home {
             background-color: pink;
-            background-image: url("../img/desk2.jpg");
-            background-size: auto;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
+            background-image: none;
         }
     }
 }
 
-@supports (overflow:-webkit-marquee), (justify-content:inherit) and (max-width: 768px){
+@supports (overflow:-webkit-marquee) and (justify-content:inherit){
      #home {
         background-color: pink;
-        background-image: url("../img/desk3.jpg");
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-image: none;
     }
 }
 
