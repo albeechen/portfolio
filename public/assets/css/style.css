@@ -653,7 +653,8 @@ footer {
     @media {
         #home {
             background-color: pink;
-            background-image: none;
+            background-image: url("../img/desk2.jpg");
+        	height: 550px;
         }
     }
 }
