@@ -72,6 +72,7 @@ h3 {
     background-color: transparent;
     outline: none;
     border: 0;
+    z-index: 5;
 }
 
 #header-nav {
@@ -165,11 +166,7 @@ footer {
 
 
 
-
-
-
 /***about page***/
-
 #about {
     background-image: url("../img/blueBackGrd.jpg");
 }
@@ -382,11 +379,6 @@ footer {
 
     .title {
         font-size: 66px;
-    }
-
-    /***home page***/
-    #home {
-        background-size: 100%;
     }
 
     /***about page***/
@@ -658,6 +650,10 @@ footer {
         #home {
             background-color: pink;
             background-image: none;
+        }
+
+         #quote {
+            top: 40%;
         }
     }
 }
