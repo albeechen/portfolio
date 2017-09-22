@@ -482,8 +482,8 @@ footer{
 	/***home page***/
 	#home{
 		background-image: url("../img/desk2.jpg");
-		background-size: contain;
-		height: 450px;
+		background-size: cover;
+		height: 580px;
 	}
 
 	#quote{
