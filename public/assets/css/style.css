@@ -617,11 +617,12 @@ footer {
     }
 }
 
-@media (max-width: @iphone-screen) {
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px){
     #home {
-        background-attachment: inherit;
-        background-size: cover;
-        -webkit-background-size: cover;
+        background-image: url("../img/desk2.jpg");
+    	height: 560PX;
     }
 }
 
