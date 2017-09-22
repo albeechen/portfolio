@@ -1,286 +1,309 @@
-.body, .html{
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-	margin: 0;
+.body,
+.html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-
 }
 
-.page{
-	width: 100%;
-	height: 660px;
-	color: white;
+.page {
+    width: 100%;
+    height: 660px;
+    color: white;
 }
 
-.left{
-	width: 40%;
-	height: 100%;
-	float: left;
+.left {
+    width: 40%;
+    height: 100%;
+    float: left;
 }
 
-.right{
-	width: 60%;
-	height: 100%;
-	float: right;
-	position: relative;
+.right {
+    width: 60%;
+    height: 100%;
+    float: right;
+    position: relative;
 }
 
-.title{
-	font-family: "Sans-serif", Verdana, Times;
-	font-size: 90px;
-	padding-left: 120px;
+.title {
+    font-family: "Sans-serif", Verdana, Times;
+    font-size: 90px;
+    padding-left: 120px;
 }
 
-h1, h3{
-	margin: 0;
+h1,
+h3 {
+    margin: 0;
 }
 
-.title1{
-	color: white;
-	padding-top: 50px;
+.title1 {
+    color: white;
+    padding-top: 50px;
 }
 
-.title2{
-	color: orange;
-	padding-top: 10px;
+.title2 {
+    color: orange;
+    padding-top: 10px;
 }
+
 
 /***burger*****/
-#burger.glyphicon{
-	font-size: 28px;
-	color: gray;
+
+#burger.glyphicon {
+    font-size: 28px;
+    color: gray;
 }
 
-#navbarToggle{
-	top: 10px;
-	right: 10px;
-	position: fixed;
-	display: none;
-	z-index: 1;
+#navbarToggle {
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    display: none;
+    z-index: 1;
 }
+
 
 /***menu*****/
-#header-nav{
-	width: 100%;
-	height: 60px;
-	bottom: 30px;
-	position: fixed;
-	background-color: white;
-	margin-bottom: 0;
-	border-radius: 0;
-	font-size: 24px;
-	text-align: center;
-	z-index: 2;
+
+#header-nav {
+    width: 100%;
+    height: 60px;
+    bottom: 30px;
+    position: fixed;
+    background-color: white;
+    margin-bottom: 0;
+    border-radius: 0;
+    font-size: 24px;
+    text-align: center;
+    z-index: 2;
 }
 
-#header-collapse{
-	display: inline-block;
-	margin: 0;
+#header-collapse {
+    display: inline-block;
+    margin: 0;
     position: relative;
     top: 20%;
     z-index: 1;
 }
 
-.navMenu{
-	float: left;
-	margin: 7px 30px;
-	font-size: 16px;
-	font-weight: bold;
+.navMenu {
+    float: left;
+    margin: 7px 30px;
+    font-size: 16px;
+    font-weight: bold;
 }
+
 
 /***footer*****/
-footer{
-	width: 100%;
-	height: 30px;
-	bottom: 0px;
-	position: fixed;
-	background-color: #ffc266;
-	text-align: center;
+
+footer {
+    width: 100%;
+    height: 30px;
+    bottom: 0px;
+    position: fixed;
+    background-color: #ffc266;
+    text-align: center;
 }
 
-#footerName{
-	margin: 5px auto;
-	display: inline-block;
+#footerName {
+    margin: 5px auto;
+    display: inline-block;
 }
+
 
 
 /***home page***/
-#home{
-	width: 100%;
-	height: 710px;
-	background-image: url("../img/desk.jpg");
- 	background-repeat: no-repeat;
- 	background-attachment: fixed;
- 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+
+#home {
+    width: 100%;
+    height: 710px;
+    background-image: url("../img/desk.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
- 	opacity: 0.8;
+    opacity: 0.8;
+    @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
 }
 
-#goDown{
-	background: url("../img/arrow.png") no-repeat;
-	width: 15%;
-	height: 15%;
- 	background-size: contain;
- 	margin: 0;
- 	position: relative;
- 	left: 45%;
- 	top: 30%;
+#goDown {
+    background: url("../img/arrow.png") no-repeat;
+    width: 15%;
+    height: 15%;
+    background-size: contain;
+    margin: 0;
+    position: relative;
+    left: 45%;
+    top: 30%;
 }
 
-#quote{
-	background: url("../img/cloud_name.png") no-repeat;
-	width: 40%;
-	height: 55%;
- 	background-size: 100% 100%;
- 	margin: 0;
- 	position: relative;
- 	left: 35%;
- 	top: 10%;
+#quote {
+    background: url("../img/cloud_name.png") no-repeat;
+    width: 40%;
+    height: 55%;
+    background-size: 100% 100%;
+    margin: 0;
+    position: relative;
+    left: 35%;
+    top: 10%;
 }
+
 
 /***about page***/
-#about{
-	background-image: url("../img/blueBackGrd.jpg");
+
+#about {
+    background-image: url("../img/blueBackGrd.jpg");
 }
 
-.context{
-	font-size: 32px;
-	position: absolute;
-	margin: 20% 10%;
-  	width: 80%;
+.context {
+    font-size: 32px;
+    position: absolute;
+    margin: 20% 10%;
+    width: 80%;
     color: white;
 }
 
 
+
 /***skill page***/
-#skill{
-	background-image: url("../img/subtle-mosaic-white.png");
-	height: 700px;
+
+#skill {
+    background-image: url("../img/subtle-mosaic-white.png");
+    height: 700px;
 }
 
-#skill .left{
-	width: 100%;
-	height: 30%;
-	float: none;
-	padding-top: 50px;
-	color: #00bfff;
+#skill .left {
+    width: 100%;
+    height: 30%;
+    float: none;
+    padding-top: 50px;
+    color: #00bfff;
 }
 
-#skill .right{
-	width: 100%;
-	height: 70%;
-	float: none;
-	margin: 10px auto;
+#skill .right {
+    width: 100%;
+    height: 70%;
+    float: none;
+    margin: 10px auto;
 }
 
-#skillContain{
-	width: 100%;
-	height: 95%;
-	margin: 0px auto;
+#skillContain {
+    width: 100%;
+    height: 95%;
+    margin: 0px auto;
 }
 
-.left_box, .right_box{
-	width: 50%;
-	height: 100%;
-	float: left;
+.left_box,
+.right_box {
+    width: 50%;
+    height: 100%;
+    float: left;
 }
 
-.skillList{
-	width: 635px;
-	height: 100%;
-	max-width: 100%;
+.skillList {
+    width: 635px;
+    height: 100%;
+    max-width: 100%;
 }
 
-#skillList1{
-	background: url("../img/skillList1.png") no-repeat;
-	background-size: contain;
-	float: right;
+#skillList1 {
+    background: url("../img/skillList1.png") no-repeat;
+    background-size: contain;
+    float: right;
 }
 
-#skillList2{
-	background: url("../img/skillList2.png") no-repeat;
-	background-size: contain;
-	float: left;
+#skillList2 {
+    background: url("../img/skillList2.png") no-repeat;
+    background-size: contain;
+    float: left;
+}
+
+
+
+/***contact page***/
+
+#contact {
+    background-image: url("../img/yellow-polka-dot-pattern-1795.png");
+    background-attachment: fixed;
+}
+
+#contact .left,
+#contact .right {
+    width: 50%;
+    position: relative;
+}
+
+#contact .title {
+    color: orange;
+}
+
+#contact h3 {
+    font-size: 48px;
+    color: gray;
+}
+
+#mail_box {
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#emailMe {
+    margin: 20px auto;
+    background: url("../img/email.png") no-repeat;
+    width: 35%;
+    height: 55%;
+    background-size: 90%;
+    max-height: 100%;
+    display: inline-block;
+}
+
+#emailMe:hover {
+    margin: 20px auto;
+    background: url("../img/sentEmail.png") no-repeat;
+    width: 35%;
+    height: 55%;
+    background-size: 90%;
+    max-height: 100%;
+    display: inline-block;
+}
+
+#map {
+    margin-top: 160px;
+    width: 100%;
+    height: 70%;
+    border: 1px red solid;
 }
 
 
 /***contact page***/
-#contact{
-	background-image: url("../img/yellow-polka-dot-pattern-1795.png");
- 	background-attachment: fixed;
+
+#photo {
+    background-color: #d1b3ff;
 }
 
-#contact .left, #contact .right{
-	width: 50%;
-	position: relative;
-}
 
-#contact .title{
-	color: orange;
-}
-
-#contact h3{
-	font-size: 48px;
-	color: gray;
-}
-
-#mail_box{
-	height: 70%;
-	width: 100%;
-	text-align: center;
-	padding-top: 30px;
-}
-
-#emailMe{
-	margin: 20px auto;
-	background: url("../img/email.png") no-repeat;
-	width: 35%;
-	height: 55%;
-	background-size: 90%;
-	max-height: 100%;
-	display: inline-block;
-}
-
-#emailMe:hover{
-	margin: 20px auto;
-	background: url("../img/sentEmail.png") no-repeat;
-	width: 35%;
-	height:  55%;
-	background-size: 90%;
-	max-height: 100%;
-	display: inline-block;
-}
-
-#map{
-	margin-top: 160px;
-	width: 100%;
-	height: 70%;
-	border: 1px red solid;
-}
-
-/***contact page***/
-#photo{
-	background-color: #d1b3ff;
-}
 /*debug*/
-#home{
-	background-color: black;
+
+#home {
+    background-color: black;
 }
 
-#about{
-	background-color: yellow;
+#about {
+    background-color: yellow;
 }
 
-#skills{
-	background-color: blue;
+#skills {
+    background-color: blue;
 }
 
-#contact{
-	background-color: green;
+#contact {
+    background-color: green;
 }
+
 
 
 
@@ -289,292 +312,302 @@ footer{
 
 /*********RWD*********/
 
-@media (min-width: 1200px) and (max-width: 1600px) {
-}
+@media (min-width: 1200px) and (max-width: 1600px) {}
 
 @media (min-width: 992px) and (max-width: 1199px) {
-	.title{
-		padding-left: 100px;
-	}
+    .title {
+        padding-left: 100px;
+    }
 
-	.title{
-		font-size: 70px;
-	}
+    .title {
+        font-size: 70px;
+    }
 
-	/***home page***/
-	#home {
-		background-size: 100%;
-	}
+    /***home page***/
+    #home {
+        background-size: 100%;
+    }
 
-	#quote{
-		top: 20%;
-	}
+    #quote {
+        top: 20%;
+    }
 
-	/***about page***/
-	.context{
-		font-size: 26px;
-	}
+    /***about page***/
+    .context {
+        font-size: 26px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-	.title{
-		padding-left: 60px;
-	}
+    .title {
+        padding-left: 60px;
+    }
 
-	.title{
-		font-size: 66px;
-	}
+    .title {
+        font-size: 66px;
+    }
 
-	/***home page***/
-	#home {
-		background-size: 100%;
-	}
+    /***home page***/
+    #home {
+        background-size: 100%;
+    }
 
-	/***about page***/
-	.context{
-		font-size: 28px;
-	}
+    /***about page***/
+    .context {
+        font-size: 28px;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-	.left, .right{
-		width: 100%;
-		height: auto;
-		float: none;
-	}
+    .left,
+    .right {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
 
-	.title{
-		padding-left: 80px;
-		font-size: 60px;
-	}
+    .title {
+        padding-left: 80px;
+        font-size: 60px;
+    }
 
-	#about .left, #skill .left{
-		height: 35%;
-	}
+    #about .left,
+    #skill .left {
+        height: 35%;
+    }
 
-	#about .right, #skill .right{
-		height: 65%;
-	}
+    #about .right,
+    #skill .right {
+        height: 65%;
+    }
 
-	/***menu page***/
-   	#navbarToggle{
-		display: block;
-	}
+    /***menu page***/
+    #navbarToggle {
+        display: block;
+    }
 
-	div a {
-		color: white;
-	}
+    div a {
+        color: white;
+    }
 
-	div a:hover{
-		color: #8ab8e0;
-	}
+    div a:hover {
+        color: #8ab8e0;
+    }
 
-	#header-nav{
-		display: none;
-		height: 100%;
-		width: 30%;
-		background-color: #2d2d86;/*#004080;*/
-		bottom: 0;
-	}
+    #header-nav {
+        display: none;
+        height: 100%;
+        width: 30%;
+        background-color: #2d2d86;
+        /*#004080;*/
+        bottom: 0;
+    }
 
-	.navMenu{
-		float: none;
-		color: white;
-	}
+    .navMenu {
+        float: none;
+        color: white;
+    }
 
-	/***about page***/
-	.context{
-		font-size: 26px;
-	}
+    /***about page***/
+    .context {
+        font-size: 26px;
+    }
 
-	/***skill page***/
-	#skillContain{
-		width: 90%;
-	}
+    /***skill page***/
+    #skillContain {
+        width: 90%;
+    }
 
-	#skill .left{
-		text-align: left;	
-	}
+    #skill .left {
+        text-align: left;
+    }
 
-	#skillList1, #skillList2{
-		width: 100%;
-		height: 80%;
-		float: none;
-		background-size: 100% 100%;
-	}
+    #skillList1,
+    #skillList2 {
+        width: 100%;
+        height: 80%;
+        float: none;
+        background-size: 100% 100%;
+    }
 
-	#contact .left, #contact .right{
-		width: 50%;
-		height: 100%;
-		float: left;
-	}
+    #contact .left,
+    #contact .right {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
 
-	#contact h3{
-		margin-top: 100px;
-		font-size: 36px;
-		height: 20%;
-	}
+    #contact h3 {
+        margin-top: 100px;
+        font-size: 36px;
+        height: 20%;
+    }
 
-	/***footer page***/
-	footer{
-		position: relative;
-		margin: 0;
-	}
+    /***footer page***/
+    footer {
+        position: relative;
+        margin: 0;
+    }
 }
 
 @media (max-width: 479px) {
-	.left, .right{
-		height: auto;
-		width: 100%;
-		float: none;
-	}
+    .left,
+    .right {
+        height: auto;
+        width: 100%;
+        float: none;
+    }
 
-	.title{
-		padding-left: 45px;
-		font-size: 50px;
-		display: inline-block;
-	}
+    .title {
+        padding-left: 45px;
+        font-size: 50px;
+        display: inline-block;
+    }
 
-	#about .left, #skill .left{
-		height: 30%;	
-	}
+    #about .left,
+    #skill .left {
+        height: 30%;
+    }
 
-	#about .right, #skill .right{
-		height: 70%;
-	}
+    #about .right,
+    #skill .right {
+        height: 70%;
+    }
 
-	/***menu***/
-    #navbarToggle{
-		display: block;
-	}
+    /***menu***/
+    #navbarToggle {
+        display: block;
+    }
 
-	.navMenu{
-		float: none;
-		margin: 10px auto;
-		font-size: 12px;
-		color: white;
-	}
+    .navMenu {
+        float: none;
+        margin: 10px auto;
+        font-size: 12px;
+        color: white;
+    }
 
-	div a {
-		color: white;
-	}
+    div a {
+        color: white;
+    }
 
-	div a:hover{
-		color: #8ab8e0;
-	}
+    div a:hover {
+        color: #8ab8e0;
+    }
 
-	#header-nav{
-		display: none;
-		height: 100%;
-		width: 30%;
-		background-color: #2d2d86;/*#004080;*/
-		bottom: 0;
-	}
+    #header-nav {
+        display: none;
+        height: 100%;
+        width: 30%;
+        background-color: #2d2d86;
+        /*#004080;*/
+        bottom: 0;
+    }
 
-	.navMenu{
-		text-align: center;
-		float: none;
-		font-size: 12px;
-	}
+    .navMenu {
+        text-align: center;
+        float: none;
+        font-size: 12px;
+    }
 
-	/***home page***/
-	#quote{
-		width: 40%;
-		height: 20%;
-	 	background-size: 100% 100%;
-	 	margin: 0;
-	 	left: 35%;
-	 	top: 60%;
-	}
+    /***home page***/
+    #quote {
+        width: 40%;
+        height: 20%;
+        background-size: 100% 100%;
+        margin: 0;
+        left: 35%;
+        top: 60%;
+    }
 
-	#goDown{
-		width: 15%;
-		height: 15%;
-	 	background-size: contain;
-	 	margin: 0;
-	 	position: relative;
-	 	left: 45%;
-	 	top: 65%;
-	}
+    #goDown {
+        width: 15%;
+        height: 15%;
+        background-size: contain;
+        margin: 0;
+        position: relative;
+        left: 45%;
+        top: 65%;
+    }
 
-	/***about page***/
-	.context{
-		font-size: 20px;
-	}
+    /***about page***/
+    .context {
+        font-size: 20px;
+    }
 
-	/***skill page***/
-	#skillContain{
-		width: 90%;
-	}
+    /***skill page***/
+    #skillContain {
+        width: 90%;
+    }
 
-	#skill .title{
-		text-align: left;
-		padding-left: 0;
-	}
+    #skill .title {
+        text-align: left;
+        padding-left: 0;
+    }
 
-	.left_box, .right_box{
-		width: 100%;
-		height: 50%;
-		float: none;
-		position: relative;
-	}
+    .left_box,
+    .right_box {
+        width: 100%;
+        height: 50%;
+        float: none;
+        position: relative;
+    }
 
-	#skill .left{
-		text-align: left;	
-		padding-left: 45px;
-	}
+    #skill .left {
+        text-align: left;
+        padding-left: 45px;
+    }
 
-	#skillList1, #skillList2
-	{
-		width: 100%;
-		height: 80%;
-		background-size: 100%;
-		float: none;
-		position: absolute;
-	}
+    #skillList1,
+    #skillList2 {
+        width: 100%;
+        height: 80%;
+        background-size: 100%;
+        float: none;
+        position: absolute;
+    }
 
-	#skillList1{
-		bottom: 0;
-	}
+    #skillList1 {
+        bottom: 0;
+    }
 
-	#skillList2{
-		top: 0;
-	}
+    #skillList2 {
+        top: 0;
+    }
 
-	/***contact page***/
-	#contact .left, #contact .right{
-		width: 100%;
-		height: 50%;
-	}
+    /***contact page***/
+    #contact .left,
+    #contact .right {
+        width: 100%;
+        height: 50%;
+    }
 
-	#contact .titlel{
-		text-align: none;
-	}
+    #contact .titlel {
+        text-align: none;
+    }
 
-	#contact h3{
-		font-size: 24px;
-		height: 20%;
-	}
+    #contact h3 {
+        font-size: 24px;
+        height: 20%;
+    }
 
-	#emailMe{
-		margin: 0;
-		height: 80%;
-	}
+    #emailMe {
+        margin: 0;
+        height: 80%;
+    }
 
-	#emailMe:hover{
-		margin: 0;
-		height: 80%;
-	}
+    #emailMe:hover {
+        margin: 0;
+        height: 80%;
+    }
 
-	#map{
-		margin-top: 50px;
-	}
+    #map {
+        margin-top: 50px;
+    }
 
-	/*foot page*/
-	footer{
-		position: relative;
-	}
+    /*foot page*/
+    footer {
+        position: relative;
+    }
 }
 
-@media (orientation:landscape) {
-}
+@media (orientation:landscape) {}
