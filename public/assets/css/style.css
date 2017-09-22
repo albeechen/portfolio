@@ -468,8 +468,7 @@ footer {
 }
 
 @media (max-width: 479px) {
-    .safari_only {
-        #home {
+    ::i-block-chrome, #home{
             background-color: pink;
             /*url("../img/desk2.jpg");
 	    	height: 560PX;
