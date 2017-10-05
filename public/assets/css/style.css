@@ -510,6 +510,7 @@ footer {
     /***menu***/
     #home {
         background-image: url("../img/desk_xs.jpg");
+        background-size: initial;
     }
 
     #navbarToggle {
