@@ -1,4 +1,4 @@
-    .body,
+.body,
 .html {
     width: 100%;
     height: 100%;
@@ -131,17 +131,16 @@ footer {
 
 
 /***home page***/
-
 #home {
-    width: 100%;
-    height: 710px;
+    width: 100%; 
+    height: 600px;
     background-image: url("../img/desk.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     opacity: 0.8;
 }
-
+/*
 #goDown {
     background: url("../img/arrow.png") no-repeat;
     width: 15%;
@@ -150,7 +149,7 @@ footer {
     margin: 0;
     position: relative;
     left: 45%;
-    top: 30%;
+    top: 80%;
 }
 
 #quote {
@@ -163,7 +162,7 @@ footer {
     left: 35%;
     top: 10%;
 }
-
+*/
 
 
 /***about page***/
@@ -505,6 +504,10 @@ footer {
 
 
     /***menu***/
+    #home {
+        background-image: url("../img/desk_xs.jpg");
+    }
+
     #navbarToggle {
         display: block;
     }
@@ -644,25 +647,3 @@ footer {
         position: relative;
     }
 }
-
-@media not all and (min-resolution:.001dpcm)  {
-    @media {
-        #home {
-            background-color: pink;
-            background-image: none;
-        }
-
-         #quote {
-            top: 40%;
-        }
-    }
-}
-
-@supports (overflow:-webkit-marquee) and (justify-content:inherit){
-     #home {
-        background-color: pink;
-        background-image: none;
-    }
-}
-
-@media (orientation:landscape) {}
