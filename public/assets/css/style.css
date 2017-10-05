@@ -410,6 +410,10 @@ footer {
     }
 
     /***menu page***/
+    #home {
+        background-image: url("../img/desk_s.jpg");
+    }
+
     #navbarToggle {
         display: block;
     }
