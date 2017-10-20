@@ -1,7 +1,9 @@
-$(document).ready(function() {
-    $("#hamburger").click(function() {
-        let menu = document.getElementById('menu');
-        let sites = document.getElementById('link_sites');
+'use strict';
+
+$(function () {
+    $("#hamburger").click(function () {
+        var menu = document.getElementById('menu');
+        var sites = document.getElementById('link_sites');
         if (menu.style.display === 'none') {
             menu.style.display = 'block';
         } else {
@@ -10,4 +12,3 @@ $(document).ready(function() {
         }
     });
 });
-

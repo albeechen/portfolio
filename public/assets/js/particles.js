@@ -1,4 +1,4 @@
-class Ball {
+/*class Ball {
     constructor(color) {
         this.x = Math.floor((Math.random() * 100) + 1) * 0.8, //x_,//100,
             this.y = Math.floor((Math.random() * 100) + 1) * 0.6, // y_,//100,
@@ -14,11 +14,51 @@ class Ball {
                 ctx.fill();
             }
     }
-}
+}*/
+(function() {
+    var lastTime = 0;
+    var vendors = ['webkit', 'moz'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame =
+          window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+    }
 
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
 
 var canvas = document.getElementById('canv');
 var ctx = canvas.getContext('2d');
+
+function Ball(color) { 
+    this.x = Math.floor((Math.random() * 100) + 1) * 0.8, //x_,//100,
+    this.y = Math.floor((Math.random() * 100) + 1) * 0.6, // y_,//100,
+    this.vx = Math.floor((Math.random() * 10) + 1), //vx_,//5,
+    this.vy = Math.floor((Math.random() * 10) + 1), //vy_,//2,
+    this.radius = Math.floor((Math.random() * 10) + 1) * 5, //radius_,//25,
+    this.color = color, //'blue',
+    this.draw = function() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+        ctx.closePath();
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+}
+
 var number = 10;
 var ball = [
     new Ball('blue'),
@@ -110,7 +150,7 @@ function draw(time) {
 }
 
 var ready = false;
-var timer = setInterval(() => {
+var timer = setInterval( function(){
     if (count1 > (text1.length - 1)) {
         temp2 += text2[count2];
         count2++;
@@ -172,3 +212,4 @@ document.getElementById('left').addEventListener("click", function(){
 
 draw();
 body_resize();
+
