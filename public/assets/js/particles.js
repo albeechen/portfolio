@@ -152,7 +152,7 @@ document.getElementById('fast').addEventListener("click", function(){
 })
   
 function changeColor(){
-    var newColor = document.getElementById('container');
+    var newColor = document.getElementById('home-container');
     var colors = [];
     for(j = 0 ; j < 3; j++)
       colors[j] = Math.floor(Math.random() * 256);
