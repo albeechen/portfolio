@@ -5,9 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "google-maps": "^3.2.1",
-    "graceful-fs": "^4.1.11",
+    "express": "^4.14.1",
     "nodemailer": "^4.1.0"
   },
   "devDependencies": {},
@@ -15,6 +13,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "albeechen",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/albeechen/portfolio.git"
+  },
+  "author": "albee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albeechen/portfolio/issues"
+  },
+  "homepage": "https://github.com/albeechen/portfolio#readme"
 }

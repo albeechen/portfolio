@@ -6,96 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <title>Shaohsien Chen</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Libre+Barcode+39+Text" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Chewy|Permanent+Marker|Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
-	<header>
-		<div id="navbarToggle">
-			<button type="button" id="btn">
-			<span id="burger" class="glyphicon glyphicon-menu-hamburger"></span></button>
-	    </div>
+    <div class="main-content" id="container">
 
-        <div id="header-nav">
-        	<div id="header-collapse">
-	            <div class="navMenu"><a href="#home">HOME</a>
-	            </div>
-	            <div class="navMenu"><a href="#about">ABOUT</a></div>
-	            <div class="navMenu"><a href="#skill">SKILL</a></div>         
-	           	<div class="navMenu"><a href="#contact">CONTACT</a></div>
-	        </div>
-        </div> 
-	</header>
+        <div id="game">
+            <div id="fast" class="game-item"><span class="glyphicon glyphicon-triangle-top"></span></a></div>
+            <div class="game-item" id="line-item_container"> 
+                <div id="left" class="line-item"><span class="glyphicon glyphicon-triangle-left"></span></div>
+                <div id="hamburger" class="line-item"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
+                <div id="right" class="line-item"><span class="glyphicon glyphicon-triangle-right"></span></div>
+            </div>
+            <div id="slow" class="game-item"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+        </div>
 
-
-	<div class="page" id="home">	
-	</div>
-	<div class="page" id="about">
-		<div class="left">
-			<h1 class="title title1">ABOUT</h1>
-			<br>
-			<h1 class="title title2">ME</h1>
-		</div>
-		<div class="right">
-			<h1 class="context">
-				I'm Shaohsien Chen, a front-end developer.Several years of experience in different range of design disciplines focusing on user interaction and user experience.
-				<br><br>
-				I spent few years working both as a web developer and designer and as part of a team in various projects as an application developer.
-			</h1>
-		</div>
-	</div>
-	<div class="page" id="skill">
-		<div class="left">
-			<h1 class="title">MY SKILL</h1>
-		</div>
-		<div class="right">
-			<div id="skillContain">
-				<div class="left_box">
-					<div class="skillList" id="skillList1"></div>
-				</div>
-				<div class="right_box">
-					<div class="skillList" id="skillList2"></div></div>
-			</div>
-		</div>
-	</div>
-	<div class="page" id="contact">
-		<div class="left">
-			<h1 class="title title1">CONTACT</h1>
-			<div id="mail_box">
-				<h3>Want to email me</h3>
-				<a href="mailto:albeec0902@gmail.com"><div id="emailMe"></div></a>
-			</div>
-		</div>
-		<div class="right">
-			<div id="map"></div>
-		</div>
-	</div>
-	<!--<div class="page" id="photo"></div>
--->
-	<footer>
-		<div id="footerName">@Shaohsien Chen 2017</div>
-	</footer>
-	
-	<script src="assets/js/jquery-2.1.4.min.js"></script>
+        <div id="menu" style="display: none">
+            <div class="menu-item"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></div>
+            <div class="menu-item"><a href="about.html"><span class="glyphicon glyphicon-user"></span></a></div>
+            <div class="menu-item"><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span></a></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"><a href="https://www.linkedin.com/in/chen-shaohsien-529810125/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+            <div class="menu-item"><a href="https://github.com/albeechen"><i class="fa fa-github" aria-hidden="true"></i></a></div> 
+        </div>
+        <div id="home-group">
+            <canvas id="canv"></canvas>
+        </div>
+    </div>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/ajax-utils.js"></script>
+    <script src="assets/js/particles.js"></script>
     <script src="assets/js/script.js"></script>
-   	<script>
-     	 function initMap() {
-            var uluru = {lat: 33.691186, lng: -117.838558};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 10,
-              center: uluru
-            });
-            var marker = new google.maps.Marker({
-              position: uluru,
-              map: map
-            });
-        }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH25jrEJVElnQKB52z6mRiOBFRpmyQZDU&callback=initMap">
-    </script>
 </body>
+
 </html>

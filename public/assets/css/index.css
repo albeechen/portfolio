@@ -1,0 +1,121 @@
+/********home abstract div***************/
+
+#container {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    background-color:  #333333;
+}
+
+#home-group {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/********home div***************/
+
+.home-element {
+    height: 100%;
+    float: left;
+    text-align: center;
+    width: auto;
+}
+
+#home-photo {
+    z-index: -1;
+}
+
+#photo {
+    content: url("../image/portfolio2.jpg");
+    max-width: 100%;
+}
+
+#home-name {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 500%;
+    margin: 0px 10px 0px -50px;
+    padding-top: 250px;
+}
+
+#home-slogan {
+    font-family: times;
+    font-size: 200%;
+    padding-top: 450px;
+}
+
+/*********RWD*********/
+
+@media (min-width: 1200px) and (max-width: 1600px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #home-slogan {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .home-element {
+        height: auto;
+        width: 100%;
+        float: none;
+        padding-top: 10px;
+    }
+
+    #home-slogan {
+        padding-top: 10px;
+    }
+    #home-photo {
+        margin-top: 60px;
+    }
+    #home-name {
+        padding-top: 10px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .home-element {
+        height: auto;
+        width: 100%;
+        float: none;
+    }
+
+    #home-photo {
+        margin-top: 60px;
+    }
+
+    #home-name {
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    #home-slogan {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 479px) {
+    .home-element {
+        height: auto;
+        width: 100%;
+        float: none;
+    }
+
+    #home-photo {
+        margin-top: 40px;
+    }
+
+    #home-name {
+        padding-top: 10px;
+        font-size: 36px;
+        margin: 0;
+    }
+
+    #home-slogan {
+        padding-top: 10px;
+    }
+}
