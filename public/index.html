@@ -15,24 +15,23 @@
 </head>
 
 <body>
-    <div class="main-content" id="home-container">
-        <div id="game">
-            <div id="fast" class="game-item"><span class="glyphicon glyphicon-triangle-top"></span></a></div>
-            <div class="game-item" id="line-item_container"> 
-                <div id="left" class="line-item"><span class="glyphicon glyphicon-triangle-left"></span></div>
-                <div id="hamburger" class="line-item"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
-                <div id="right" class="line-item"><span class="glyphicon glyphicon-triangle-right"></span></div>
-            </div>
-            <div id="slow" class="game-item"><span class="glyphicon glyphicon-triangle-bottom"></span></div>
+    <div class="main-content container" id="home-container">
+        <div id="speeder">
+            <div id="fast" class="speeder-item"><span class="glyphicon glyphicon-circle-arrow-up"></span></div>
+            <div id="slow" class="speeder-item"><span class="glyphicon glyphicon-circle-arrow-down"></span></div>
+        </div>  
+        <div id="hamburger"><span class="glyphicon glyphicon-menu-hamburger"></span>
         </div>
-        <div id="menu" style="display: none">
+        <div id="menu" style="display:none">
+            <div class="menu-item" id="removeBtn"><span class="glyphicon glyphicon-remove"></span>
+            </div>
             <div class="menu-item"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></div>
             <div class="menu-item"><a href="about.html"><span class="glyphicon glyphicon-user"></span></a></div>
             <div class="menu-item"><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span></a></div>
             <div class="menu-item"></div>
             <div class="menu-item"></div>
             <div class="menu-item"><a href="https://www.linkedin.com/in/chen-shaohsien-529810125/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
-            <div class="menu-item"><a href="https://github.com/albeechen"><i class="fa fa-github" aria-hidden="true"></i></a></div> 
+            <div class="menu-item"><a href="https://github.com/albeechen"><i class="fa fa-github" aria-hidden="true"></i></a></div>
         </div>
         <div id="home-group">
             <canvas id="canv"></canvas>

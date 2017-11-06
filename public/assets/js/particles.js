@@ -38,7 +38,7 @@
         window.cancelAnimationFrame = function(id) {
             clearTimeout(id);
         };
-}());
+}());//fix requestAnimationFrame for IE and Safari
 
 var canvas = document.getElementById('canv');
 var ctx = canvas.getContext('2d');
@@ -117,7 +117,6 @@ function getFont() {
 }
 
 function draw(time) {
-    
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (var j = 0; j < number; j++) {
         ball[j].draw();
@@ -174,6 +173,7 @@ var body_resize = function() {
 
 var sp = 15;
 document.getElementById('slow').addEventListener("click", function(){
+    changeColor();
     if(sp === 0) return;
     sp -= 5;
     for (j = 0; j < number; j++) {
@@ -183,6 +183,7 @@ document.getElementById('slow').addEventListener("click", function(){
 })
 
 document.getElementById('fast').addEventListener("click", function(){
+    changeColor();
     if(sp === 30) return;
     sp += 5;
     for (j = 0; j < number; j++) {
@@ -190,7 +191,7 @@ document.getElementById('fast').addEventListener("click", function(){
       ball[j].vy = Math.floor(Math.random() * sp) + 1;
     }
 })
-  
+ 
 function changeColor(){
     var newColor = document.getElementById('home-container');
     var colors = [];
@@ -201,14 +202,6 @@ function changeColor(){
         changeColor();
     newColor.style.backgroundColor = tempColor;
 }
-
-document.getElementById('right').addEventListener("click", function(){
-    changeColor();
-})
-
-document.getElementById('left').addEventListener("click", function(){
-   changeColor();
-})
 
 draw();
 body_resize();
